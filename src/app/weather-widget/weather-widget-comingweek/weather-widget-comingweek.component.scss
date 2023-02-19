@@ -1,0 +1,33 @@
+$coming-week-item-height: 5rem;
+
+.coming-week {
+    color: var(--ww-text);
+    padding: var(--ww-content-padding);
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+            height: $coming-week-item-height;
+            display: flex;
+            justify-content: space-between;
+
+            &:not(:last-child) {
+                border-bottom: 0.1rem solid white;
+            }
+        }
+    }
+
+    // coming-week__details
+    &__details {
+        padding: 1rem 0;
+    }
+
+    // coming-week__weather-icon
+    &__weather-icon {
+        width: $coming-week-item-height;
+        height: $coming-week-item-height;
+        background-position: center;
+    }
+}

@@ -1,0 +1,15 @@
+<div class="today">
+    <div class="today__weather-details">
+        <div class="today__weather-details__time">
+            {{ currentDate | date: 'h:mm a' }}
+        </div>
+        <div class="today__weather-details__temp">
+            {{ todayWeather.temp | roundnumber }}&#8451;
+        </div>
+        <div class="today__weather-details__feels-like">
+            {{ 'FEELS_LIKE' | translate }}: {{ todayWeather.feelsLike | roundnumber }}°
+        </div>
+    </div>
+    <div class="today__weather-graphic" [weatherWidgetIcon]="todayWeather">
+    </div>
+</div>

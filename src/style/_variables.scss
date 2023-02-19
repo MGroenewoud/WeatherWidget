@@ -1,0 +1,14 @@
+:root {
+    --ww-background: #378fe7;
+    --ww-text: white;
+    --ww-border-radius: 1.5rem;
+    --ww-container-width: 100%;
+    --ww-content-padding: 2.5rem;
+    --ww-not-active-tab-color: #1976d2;
+}
+
+@include media-breakpoint-up(md) {
+    :root {
+        --ww-container-width: 31rem;
+    }
+}

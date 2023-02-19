@@ -1,0 +1,10 @@
+// // We want to make use of some bootstrap utilities, but not include the whole compiled suite, so just include the ones we need:
+@import '/node_modules/bootstrap/scss/bootstrap-reboot';
+@import '/node_modules/bootstrap/scss/mixins/breakpoints';
+@import '/node_modules/bootstrap/scss/spinners';
+
+@import '/src/style/variables';
+
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

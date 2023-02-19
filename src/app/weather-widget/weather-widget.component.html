@@ -1,0 +1,12 @@
+<mat-tab-group *ngIf="!isLoading" class="widget-tabs">
+    <mat-tab [label]="'TODAY' | translate">
+        <weather-widget-today [todayWeather]="today"></weather-widget-today>
+    </mat-tab>
+    <mat-tab [label]="'COMING_WEEK' | translate">
+        <weather-widget-comingweek [comingDays]="comingWeekDays"></weather-widget-comingweek>
+    </mat-tab>
+</mat-tab-group>
+<div class="widget-loading" *ngIf="isLoading">
+    <div class="spinner-border widget-loading__spinner" role="status">
+    </div>
+</div>

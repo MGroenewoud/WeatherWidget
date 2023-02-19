@@ -1,0 +1,46 @@
+@mixin widget-body() {
+    border-radius: var(--ww-border-radius);
+    margin: 0 auto;
+    width: var(--ww-container-width);
+    background: var(--ww-background);
+    color: var(--ww-text);
+}
+
+.widget-tabs {
+    @include widget-body;
+}
+
+.widget-loading {
+    @include widget-body;
+    padding: var(--ww-content-padding);
+
+    // widget-loading__spinner
+    &__spinner {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.mat-tab-group {
+    margin: 0px auto;
+}
+
+.mat-tab-label {
+    width: 50%;
+    // background-color: #2c0a69;
+    color: var(--ww-text);
+}
+
+.mdc-tab {
+    text-transform: capitalize;
+    transition: background-color 1s;
+
+    &:not(.mdc-tab--active) {
+        background-color: var(--ww-not-active-tab-color);
+        z-index: unset;
+    }
+
+    &:hover {
+        background-color: inherit;
+    }
+}

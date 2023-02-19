@@ -1,0 +1,23 @@
+.today {
+    display: flex;
+    flex-direction: row;
+    color: var(--ww-text);
+
+    // today__weather-details
+    &__weather-details {
+        width: 50%;
+        padding: var(--ww-content-padding) 0 var(--ww-content-padding) var(--ww-content-padding);
+
+        // today__weather-details__temp
+        &__temp {
+            font-size: 5rem;
+        }
+    }
+
+    // today__weather-graphic
+    &__weather-graphic {
+        width: 50%;
+        background-position: center;
+        background-size: cover;
+    }
+}
