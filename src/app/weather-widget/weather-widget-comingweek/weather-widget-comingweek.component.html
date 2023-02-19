@@ -3,7 +3,7 @@
         <li *ngFor="let day of comingDays">
             <div class="coming-week__details">
                 {{ getDate(day.sunrise) | date:'MMM d' }}<br />
-                {{ day.temp | roundnumber }} &#8451;
+                {{ day.temp | number: '1.0-0' }} &#8451;
             </div>
             <div class="coming-week__weather-icon" [weatherWidgetIcon]="day" [assumeDaytime]="true"></div>
         </li>

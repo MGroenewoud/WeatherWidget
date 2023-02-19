@@ -20,8 +20,6 @@ import {
   WeatherIcon
 } from './weather-widget';
 
-import { RoundNumberPipe } from './pipes';
-
 // https://github.com/ngx-translate/core
 // AoT requires an exported function for factories
 export function createTranslateLoader(http: HttpClient) {
@@ -31,11 +29,10 @@ export function createTranslateLoader(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    WeatherWidgetComponent,
     WeatherIcon,
-    WeatherWidgetTodayComponent,
     WeatherWidgetComingweekComponent,
-    RoundNumberPipe,
+    WeatherWidgetComponent,
+    WeatherWidgetTodayComponent,
   ],
   imports: [
     AppRoutingModule,
